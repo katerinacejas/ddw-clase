@@ -1,8 +1,15 @@
 h1 {
     color: #bae8e8;
+    font-size: 72px;
+    font-family: Georgia;
 }
 h2 {
     color: #7f5af0;
+    font-size: 32px;
+    font-family: Georgia;
+}
+h3 {
+    font-size: 18px;
 }
 #titulo_antecedentes {
     color: #faae2b;
@@ -15,7 +22,20 @@ h2 {
 }
 .parrafo {
     color: #e53170;
+    font-size: 16px;
 }
 .negrita_diseño_grafico {
     color: #2cb67d;
+}
+p strong {
+    color: #94a1b2;
+}
+#parrafo_mas_grande {
+    font-size: 20px;
+}
+.parrafos_articles {
+    font-size: 16px;
+}
+.tipografia_general {
+    font-family: Arial;
 }
