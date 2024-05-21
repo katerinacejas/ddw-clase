@@ -1,57 +1,74 @@
+/*
+
+Guia de colores a usar:
+- rosa fondo calculadora: #fdcae1
+- turquesa complementario: #cafde6 (visor? fondo?)
+- botones numeros: #ffe1ee
+- botones operadores: #edbad1
+- botones borrar: #cd9cb2
+
+*/
+
 body {
     background-color: black;
 }
-.display_flex {
-    display: flex;
+h1 {
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Lucida Sans';
 }
-.centrar_div {
-    justify-content: center;
-}
-.contenedor_general {
-    background-color: plum;
-    width: 400px;
-    height: 500px;
-    box-shadow: 1px 1px 2px 0 rgba(254, 254, 254, 0.2), 1px 4px 8px 0 rgb(255, 255, 255);
-}
-.bordes_redondeados {
-    border-radius: 15px;
-}
-.card_horizontal {
-    background-color: white;
-    box-shadow: 0px 2px 4px 2px rgb(205, 203, 203);
-    height: 10%;
+.contenedor {
     width: 100%;
+    justify-content: center;
+    display: flex;
 }
-.border_box {
-    box-sizing: border-box;
-}
-.margen_con_contenedor_general {
-    margin: 15px;
-}
-.alineado_centro {
+
+
+/* flex y alineaciones */
+.flex_horizontal_center {
+    display: flex;
     align-items: center;
 }
-.texto_visor {
-    margin-left: 5px;
-    margin-right: 15px;
-    font-size: 20px;
-}
-.alineacion_derecha {
-    justify-content: flex-end;
-}
-
-
-
-
-
-
-/* 
-.items_centro {
-    align-items: center;
+.vertical_center {
     justify-content: center;
 }
-.flex_horizontal {
-    display: flex;
+.direction_column {
+    flex-direction: column;
+}
+.direction_row {
     flex-direction: row;
 }
-*/
+
+
+/* bordes */
+.bordes_redondeados {
+    border-radius: 50px;
+}
+
+
+/* backgrounds */
+.background_calculadora {
+    background-color: #fdcae1;
+}
+.background_visor {
+    background-color: #cafde6;
+}
+
+/* tamanios */
+.tamanio_calculadora {
+    width: 400px;
+    height: 620px;
+}
+.tamanio_visor {
+    height: 10%;
+}
+.width_divs_dentro_calculadora {
+    width: 90%;
+}
+
+.texto_visor {
+    font-size: 40px;
+    margin: 2px 15px 2px 15px;
+    text-align: right;
+}
