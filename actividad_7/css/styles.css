@@ -17,6 +17,7 @@ h1 {
     font-weight: 400;
     text-align: center;
     font-family: 'Lucida Sans';
+    margin: 40px 0 40px 0;
 }
 .contenedor {
     width: 100%;
@@ -39,6 +40,15 @@ h1 {
 .direction_row {
     flex-direction: row;
 }
+.a_la_derecha {
+    justify-content: flex-end;
+}
+.space_around {
+    justify-content: space-around;
+}
+.wrap {
+    flex-wrap: wrap;
+}
 
 
 /* bordes */
@@ -50,15 +60,27 @@ h1 {
 /* backgrounds */
 .background_calculadora {
     background-color: #fdcae1;
+    box-shadow: 0 0 40px rgb(255 255 255 / 70%);
 }
 .background_visor {
     background-color: #cafde6;
+    box-shadow: 0px 4px 8px rgb(205 74 255 / 60%);
 }
+.background_borrar {
+    background-color: #cd9cb2;
+}
+.background_numeros {
+    background-color: #ffe1ee;
+}
+.background_operadores {
+    background-color: #edbad1;
+}
+
 
 /* tamanios */
 .tamanio_calculadora {
-    width: 400px;
-    height: 620px;
+    width: 300px;
+    height: 500px;
 }
 .tamanio_visor {
     height: 10%;
@@ -66,9 +88,29 @@ h1 {
 .width_divs_dentro_calculadora {
     width: 90%;
 }
+.tamanio_borrar {
+    width: 120px;
+    height: 40px;
+}
+.tamanio_numeros_operadores {
+    width: 50px;
+    height: 50px;
+}
 
+
+
+/* margenes */
+.margen_entre_bloques {
+    margin-top: 15px;
+}
+
+
+/* textos */
 .texto_visor {
     font-size: 40px;
     margin: 2px 15px 2px 15px;
     text-align: right;
+}
+.texto_buttons {
+    font-size: 25px;
 }
