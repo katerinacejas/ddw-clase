@@ -16,18 +16,15 @@ Math.floor(Math.random() * 10) + 1: Al hacer esto, redondeamos el numero decimal
 'use strict'
 
 const numeroAleatorio = Math.floor(Math.random() * 10) + 1;
-let numeroAdivinado = false;
 let numeroIngresado = parseInt( prompt(`Adivina un número entre 1 y 10`) )
 
 do {
     if (numeroIngresado > numeroAleatorio) {
         numeroIngresado = parseInt( prompt(`El número a adivinar es menor. Intentalo de nuevo`) )
     }
-    else if (numeroIngresado < numeroAleatorio){
+    else {
         numeroIngresado = parseInt( prompt(`El número a adivinar es mayor. Intentalo de nuevo`) )
     }
-    else {
-        console.log(`¡Felicitaciones! Adivinaste el número ${numeroAleatorio}`)
-        numeroAdivinado = true;
-    }
-} while(!numeroAdivinado)
+} while(numeroAleatorio!=numeroIngresado)
+
+console.log(`¡Felicitaciones! Adivinaste el número ${numeroAleatorio}`)
