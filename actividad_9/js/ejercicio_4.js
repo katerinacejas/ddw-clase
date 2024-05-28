@@ -8,3 +8,4 @@ console.log(pares); // Debería imprimir [2, 4, 6]
 */
 
 'use strict'
+    

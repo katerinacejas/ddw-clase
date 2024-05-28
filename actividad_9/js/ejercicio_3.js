@@ -8,3 +8,15 @@ console.log(suma); // Debería imprimir 15
 */
 
 'use strict'
+
+function sumarElementos(unosElementos) {
+    let suma = 0;
+    for(let elemento of unosElementos) {
+        suma += elemento
+    }
+    return suma
+}
+
+const numeros = [1, 2, 3, 4, 5];
+const suma = sumarElementos(numeros);
+console.log(`La suma de los numeros del array [${numeros}] es ${suma}`);
